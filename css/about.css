@@ -152,17 +152,17 @@ strong {
 .prev-slide, .next-slide {
     background-color: transparent;
     border: none;
-    color: #FDBCC1;
+    color: #fff;
     font-size: 2em;
     cursor: pointer;
 }
 
 .prev-slide:hover, .next-slide:hover {
-    color: #fff;
+    color: #B89080;
 }
 
 .prev-slide:active, .prev-slide:focus, .next-slide:active, .next-slide:focus {
-    outline: none;
+    outline: none !important;
 }
 
 .prev-slide:active, .next-slide:active {
@@ -181,9 +181,9 @@ strong {
 }
 
 .slideshow-slide {
-    display: none; /* Hide all slides */
+    display: none;
 }
 
 .slideshow-slide.active {
-    display: block; /* Show only the active slide */
+    display: block;
 }
