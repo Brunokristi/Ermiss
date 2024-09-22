@@ -1,6 +1,10 @@
+html {
+    font-size: 24px;
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 1rem;
     font-weight: 300;
     color: #fff;
     background-color: #000;
@@ -11,17 +15,17 @@ body {
 .highlight {
     color: #B89080;
     font-family: 'Ephesis', cursive;
-    font-size: 96px;
+    font-size: 3rem;
 }
 
 .about h1 {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 64px;
+    font-size: 2rem;
     font-weight: 300;
 }
 
 .about p {
-    font-size: 32px;
+    font-size: 1rem;
 }
 
 /*table*/
@@ -84,7 +88,7 @@ strong {
     display: block;
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 64px;
+    font-size: 2rem;
     font-weight: 300;
     color: #B89080;
 }
@@ -100,6 +104,8 @@ strong {
     background-color: #000;
     border-radius: 15px;
     color: #fff;
+    position: relative;
+    overflow: hidden;
 }
 
 .slideshow-grid {
@@ -108,9 +114,37 @@ strong {
     height: 100%;
 }
 
-.slideshow-image img {
+.slideshow-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.background-image {
     width: 100%;
-    border-radius: 15px;
+    height: auto;
+}
+
+.slideshow-image {
+    position: relative;
+    overflow: visible; /* Make sure overflow is visible */
+    width: 100%; /* Adjust the width of the container */
+    height: auto; /* Let the container adapt to the content height */
+}
+
+.person-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -57%); /* Center the PNG */
+}
+
+.person-image {
+    width: 190%; /* Adjust size of PNG overlay */
+    height: auto;
+    overflow: visible; /* Allow the image to overflow the container */
+    z-index: 10; /* Ensure the person image appears on top */
+    position: relative;
+    object-fit: contain; /* This makes sure the entire image is visible */
 }
 
 .slideshow-name {
@@ -120,28 +154,28 @@ strong {
 
 .slideshow-name h2 {
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 64px;
+    font-size: 2rem;
     font-weight: 300;
 }
 
 .slideshow-name span{
     font-family: 'Hurricane', cursive;
-    font-size: 230px;
+    font-size: 7.1875rem;
 }
 
 .slideshow-about p {
-    font-size: 32px;
+    font-size: 1rem;
 }
 
 .slideshow-role h4 {
-    font-size: 48px;
+    font-size: 1.5rem;
     font-weight: 300;
 }
 
 .slideshow-role span {
     display: block;
     color: #B89080;
-    font-size: 32px;
+    font-size: 1rem;
 }
 
 .slideshow-nav {
@@ -153,7 +187,6 @@ strong {
     background-color: transparent;
     border: none;
     color: #fff;
-    font-size: 2em;
     cursor: pointer;
 }
 
@@ -187,3 +220,4 @@ strong {
 .slideshow-slide.active {
     display: block;
 }
+
