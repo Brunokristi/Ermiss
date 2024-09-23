@@ -1,0 +1,157 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+    padding: 25px 50px;
+}
+
+.highlight {
+    color: #B89080;
+    font-family: 'Ephesis', cursive;
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    0% {
+        left: 50px;
+        opacity: 0;
+        /* Correct property */
+    }
+
+    100% {
+        left: 0px;
+        opacity: 1;
+        /* Correct property */
+    }
+}
+
+h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.first_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.first_section .about {
+    flex: 1;
+    margin-right: 100px;
+}
+
+.first_section .background-image {
+    max-width: 300px;
+    height: auto;
+}
+
+
+.btn_body {
+    background-color: #B89080;
+    ;
+    padding: 3px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    padding-left: 10px;
+    color: #fff;
+}
+
+.btn_body:hover {
+    background-color: #F2F0E4;
+    color: #000;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #000;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.second_section {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    width: 100%;
+    border-radius: 15px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.element {
+    border-radius: 15px;
+}
+
+.border {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #FDBCC1, #853D29) border-box;
+    border: 1px solid transparent;
+    padding: 15px;
+    overflow: hidden;
+    flex: 0 0 auto;
+    transition: width 0.5s;
+}
+
+.element img {
+    height: 232px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: width 0.5s;
+}
+
+.border h1 {
+    height: 50px;
+}
+
+.border p {
+    height: 60px;
+    overflow: hidden;
+}
+
+.border:hover {
+    width: 400px;
+    transition: width 0.5s;
+}
+
+.border:hover p {
+    height: 80px;
+}
+
+.border:hover .fake_button {
+    display: none;
+}
+
+.element:hover img {
+    height: 232px;
+    width: 300px;
+    transition: width 0.5s;
+}
+
+.fake_button {
+    background-color: #B89080;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 3px 20px;
+}
