@@ -85,6 +85,7 @@ td {
 tr:first-child td {
     border-top: none;
 }
+
 tr:last-child td {
     border-bottom: none;
 }
@@ -102,6 +103,7 @@ td:last-child {
 td:first-child {
     border-left: none;
 }
+
 td:last-child {
     border-right: none;
 }
@@ -148,25 +150,33 @@ strong {
 
 .slideshow-image {
     position: relative;
-    overflow: visible; /* Make sure overflow is visible */
-    width: 100%; /* Adjust the width of the container */
-    height: auto; /* Let the container adapt to the content height */
+    overflow: visible;
+    /* Make sure overflow is visible */
+    width: 100%;
+    /* Adjust the width of the container */
+    height: auto;
+    /* Let the container adapt to the content height */
 }
 
 .person-overlay {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-90%, -57%); /* Center the PNG */
+    transform: translate(-90%, -57%);
+    /* Center the PNG */
 }
 
 .person-image {
-    width: 190%; /* Adjust size of PNG overlay */
+    width: 190%;
+    /* Adjust size of PNG overlay */
     height: auto;
-    overflow: visible; /* Allow the image to overflow the container */
-    z-index: 10; /* Ensure the person image appears on top */
+    overflow: visible;
+    /* Allow the image to overflow the container */
+    z-index: 10;
+    /* Ensure the person image appears on top */
     position: relative;
-    object-fit: contain; /* This makes sure the entire image is visible */
+    object-fit: contain;
+    /* This makes sure the entire image is visible */
 }
 
 .slideshow-name {
@@ -180,7 +190,7 @@ strong {
     font-weight: 300;
 }
 
-.slideshow-name span{
+.slideshow-name span {
     font-family: 'Hurricane', cursive;
     font-size: 7.1875rem;
 }
@@ -205,27 +215,34 @@ strong {
     margin-top: 20px;
 }
 
-.prev-slide, .next-slide {
+.prev-slide,
+.next-slide {
     background-color: transparent;
     border: none;
     color: #fff;
     cursor: pointer;
 }
 
-.prev-slide:hover, .next-slide:hover {
+.prev-slide:hover,
+.next-slide:hover {
     color: #B89080;
 }
 
-.prev-slide:active, .prev-slide:focus, .next-slide:active, .next-slide:focus {
+.prev-slide:active,
+.prev-slide:focus,
+.next-slide:active,
+.next-slide:focus {
     outline: none !important;
 }
 
-.prev-slide:active, .next-slide:active {
+.prev-slide:active,
+.next-slide:active {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
-.prev-slide, .next-slide {
+.prev-slide,
+.next-slide {
     transition: transform 0.3s ease;
 }
 
@@ -242,4 +259,3 @@ strong {
 .slideshow-slide.active {
     display: block;
 }
-
