@@ -10,6 +10,20 @@ body {
     background-color: #000;
 }
 
+.footer-bottom {
+    text-align: center;
+    justify-content: center;
+    padding-right: 95px;
+    padding-bottom: 5px;
+}
+
+.footer_container {
+    background: linear-gradient(to right bottom, #000000 45%, #B89080);
+    padding-top: 25px;
+    padding-left: 95px;
+}
+
+
 @media screen and (max-width: 992px) {
     html {
         font-size: 16px;
@@ -22,14 +36,11 @@ body {
     .footer_container {
         padding-left: 25px;
     }
-}
 
-.footer_container {
-    background: linear-gradient(to top left, #B89080, #000000);
-    padding-top: 25px;
-    padding-left: 95px;
+    .footer-bottom {
+        padding-right: 25px;
+    }
 }
-
 
 @media screen and (max-width: 576px) {
     html {
@@ -42,6 +53,10 @@ body {
 
     .footer_container {
         padding-left: 20px;
+    }
+
+    .footer-bottom {
+        padding-right: 20px;
     }
 }
 
@@ -82,12 +97,6 @@ body {
     flex-direction: column;
 }
 
-.footer-bottom {
-    text-align: center;
-    justify-content: center;
-    padding-right: 95px;
-}
-
 .blur {
     filter: blur(5px);
     transition: filter 0.3s ease;
@@ -109,7 +118,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: transparent;
     padding: 20px;
     border-radius: 8px;
     z-index: 1001;
@@ -118,10 +127,6 @@ body {
 }
 
 
-
-.contact {
-    width: 45%;
-}
 
 .container {
     background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #FDBCC1, #853D29) border-box;
@@ -146,7 +151,7 @@ input {
     padding: 10px;
     border-radius: 15px;
     border: none;
-    padding-left: 80px;
+    padding-left: 90px;
     width: 100%;
     box-sizing: border-box;
 }
@@ -174,13 +179,13 @@ textarea::placeholder {
     top: 50%;
     left: 10px;
     transform: translateY(-50%);
-    padding: 5px;
+    padding: 0 15px 0 0px;
     background-color: white;
     color: #B89080;
     transition: 0.2s ease all;
     pointer-events: none;
     border-right: solid 1px #000;
-    width: 50px;
+    width: 70px;
 }
 
 .btn {
