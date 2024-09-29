@@ -43,7 +43,8 @@ body {
     align-items: flex-start;
     background: linear-gradient(to right, #FDBCC1, #853D29);
     border-radius: 30px;
-    padding: 2px;        /*Toto je sirka gradientu, mala by byt 2 podla figmy ale mne sa paci 1 viacej Bruno?*/
+    padding: 2px;
+    /*Toto je sirka gradientu, mala by byt 2 podla figmy ale mne sa paci 1 viacej Bruno?*/
     transition: transform 0.3s ease;
     height: 100%;
     margin: 0 20px;
@@ -95,5 +96,6 @@ body {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 5;
+    line-clamp: 5;
     -webkit-box-orient: vertical;
 }
