@@ -1,0 +1,73 @@
+html {
+    font-size: 18px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+}
+
+.service {
+    padding: 20px 10px 10px;
+    border-radius: 30px;
+    margin: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000;
+
+    width: 70%;
+
+    text-align: center;
+}
+
+.service p {
+    text-align: justify;
+}
+
+.service.events {
+    background-color: #D3B9AF;
+}
+
+.service.festivals {
+    background-color: #B89080;
+}
+
+
+
+
+
+
+
+
+.services-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.service-icon {
+    text-align: center;
+    width: 100px; /* Adjust as needed */
+}
+
+.service-icon img {
+    width: 50px; /* Adjust size of icons as needed */
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.service-icon p {
+    font-size: 14px;
+}
