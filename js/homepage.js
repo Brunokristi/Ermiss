@@ -109,6 +109,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     setInterval(changeImage, 2000);
 
+    $(document).ready(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+    });
+
+
 });
 
 
