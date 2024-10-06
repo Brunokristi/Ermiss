@@ -47,40 +47,67 @@ document.addEventListener('DOMContentLoaded', function () {
     // Optional: Automatic slide change every 5 seconds
     //setInterval(showNextSlide, 5000);  // 5 seconds
 
-    const imageMapping = {
-        "../resources/photos_promoters/hostess_1.jpg": "../resources/photos_promoters/hostess_2.jpg",
-        "../resources/photos_promoters/hostess_2.jpg": "../resources/photos_promoters/hostess_3.jpg",
-        "../resources/photos_promoters/hostess_3.jpg": "../resources/photos_promoters/hostess_4.jpeg",
-        "../resources/photos_promoters/hostess_4.jpeg": "../resources/photos_promoters/hostess_5.jpg",
-        "../resources/photos_promoters/hostess_5.jpg": "../resources/photos_promoters/hostess_6.jpg",
-        "../resources/photos_promoters/hostess_6.jpg": "../resources/photos_promoters/hostess_7.jpg",
-        "../resources/photos_promoters/hostess_7.jpg": "../resources/photos_promoters/hostess_8.jpg",
-        "../resources/photos_promoters/hostess_8.jpg": "../resources/photos_promoters/hostess_9.jpg",
-        "../resources/photos_promoters/hostess_9.jpg": "../resources/photos_promoters/hostess_10.jpg",
-        "../resources/photos_promoters/hostess_10.jpg": "../resources/photos_promoters/hostess_1.jpg",
-    };
-
-    const images = document.querySelectorAll('.images img');
+    const all_images = [
+        "hostess_1.jpg",
+        "hostess_2.jpg",
+        "hostess_3.jpg",
+        "hostess_4.jpg",
+        "hostess_5.jpg",
+        "hostess_6.jpg",
+        "hostess_7.jpg",
+        "hostess_8.jpg",
+        "hostess_9.jpg",
+        "hostess_10.jpg",
+        "hostess_11.jpg",
+        "hostess_12.jpg",
+        "hostess_13.jpg",
+        "hostess_14.jpg",
+        "hostess_15.jpg",
+        "hostess_16.jpg",
+        "hostess_17.jpg",
+        "hostess_18.jpg",
+        "hostess_19.jpg",
+        "hostess_20.jpg",
+    ];
 
     function changeImage() {
-        var randomIndex = Math.floor(Math.random() * images.length);
-        while (randomIndex > 12 && randomIndex < 17) {
+        var images = document.querySelectorAll('.images img');
+        var randomIndex;
+
+        do {
             randomIndex = Math.floor(Math.random() * images.length);
+        } while (randomIndex >= 7 && randomIndex <= 9);
+
+        var img = images[randomIndex];
+
+        var displayedImageSrcs = Array.from(images).map(img => img.src);
+        var displayedImages = [];
+
+        for (var i = 0; i < displayedImageSrcs.length; i++) {
+            displayedImages.push(displayedImageSrcs[i].split('/').pop());
         }
 
-        img = images[randomIndex];
-        const currentSrc = img.getAttribute('src');
-        const newSrc = imageMapping[currentSrc];
 
-        img.style.opacity = 0;
+        var missingImages = [];
+        for (var i = 0; i < all_images.length; i++) {
+            if (!displayedImages.includes(all_images[i])) {
+                missingImages.push(all_images[i]);
+            }
+        }
 
-        setTimeout(() => {
-            img.src = newSrc;
-            img.style.opacity = 1;
-        }, 500);
+        // Change image if there are missing images
+        if (missingImages.length > 0) {
+            var newSrc = "../resources/photos_promoters/" + missingImages[0];
+
+            img.style.opacity = 0;
+            setTimeout(() => {
+                img.src = newSrc;
+                img.style.opacity = 1;
+            }, 1000);
+        }
     }
-    setInterval(changeImage, 2000);
 
+    setInterval(changeImage, 2000);
 
 });
 
