@@ -21,6 +21,7 @@ highlight {
     font-family: 'Ephesis', cursive;
     font-size: 50px;
     font-weight: 300;
+    text-align: center;
 }
 
 h2 {
@@ -51,4 +52,9 @@ h2 {
     border-radius: 15px;
     object-fit: cover;
     margin: 50px 0px;
+}
+
+a {
+    color: #B89080;
+    text-decoration: none;
 }

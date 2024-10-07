@@ -21,7 +21,19 @@
         <a href="blog.html">Blog</a>
         <a href="positions.html">Spolupráca</a>
         <a href="contact.html">Kontakt</a>
-        <button class="btn"> Objednať<i class="fa fa-arrow-right"></i></button>
+        <button class="btn" onclick="showPopup()">Objednať <i class="fa fa-arrow-right"></i></button>
+
+        <div class="popup" id="popup">
+            <h3>Sme tu pre Vás</h3>
+            <p>Ako by ste chceli pokračovať?</p>
+            <button class="option-btn" onclick="useEmail()">Email</button>
+            <button class="option-btn" onclick="useWhatsApp()">WhatsApp</button>
+            <button class="option-btn" onclick="makeCall()">Zavolať</button>
+            <button class="close-btn" onclick="closePopup()">Zavrieť</button>
+        </div>
+
+        <div class="overlay" id="overlay" onclick="closePopup()"></div>
+
     </div>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
