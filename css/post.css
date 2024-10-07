@@ -1,0 +1,54 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+}
+
+.main {
+    padding: 50px 200px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+highlight {
+    color: #B89080;
+    font-family: 'Ephesis', cursive;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Alegreya sans';
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+.image_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.image_section img {
+    height: 600px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin: 50px 0px;
+}
