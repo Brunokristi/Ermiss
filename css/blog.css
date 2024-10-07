@@ -1,52 +1,39 @@
-html {
-    font-size: 24px;
-}
-
 body {
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 300;
     color: #fff;
     background-color: #000;
 }
 
+.main {
+    padding: 50px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
 .blog {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 10%;
-    row-gap: 60px;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .blog {
-        margin: 0 5%;
-    }
-}
-
-@media (max-width: 768px) {
-    .blog {
-        margin: 0 2%;
-    }
-}
-
-.col-lg-4 .col-md-6 .col-sm-12 {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .card-container {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     background: linear-gradient(to right, #FDBCC1, #853D29);
     border-radius: 30px;
-    padding: 2px;        /*Toto je sirka gradientu, mala by byt 2 podla figmy ale mne sa paci 1 viacej Bruno?*/
+    padding: 1px;
     transition: transform 0.3s ease;
-    height: 100%;
-    margin: 0 20px;
+    width: 30%;
+    height: auto;
 }
 
 .card-container:hover {
@@ -61,7 +48,6 @@ body {
     background-color: #000;
     color: #fff;
     text-align: center;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     user-select: none;
     display: flex;
@@ -69,15 +55,15 @@ body {
 }
 
 .card img {
-    width: 101%;
+    width: 100%;
+    height: 200px;
     border-radius: 30px;
-    position: relative;
-    left: -0.5%;
-    top: -0.5%;
+    object-fit: cover;
 }
 
 .card h3 {
     margin-top: 15px;
+    margin-bottom: 0px;
     font-size: 1.5rem;
     color: #B89080;
     font-family: "Alegreya Sans", sans-serif;
@@ -85,6 +71,7 @@ body {
 
 .card p.date {
     font-size: 0.75rem;
+    text-align: center;
 }
 
 .card p.content {
@@ -95,5 +82,6 @@ body {
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-line-clamp: 5;
+    line-clamp: 5;
     -webkit-box-orient: vertical;
 }

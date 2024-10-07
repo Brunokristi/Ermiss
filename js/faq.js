@@ -14,8 +14,11 @@ $(document).ready(function () {
             $(this).closest('.faq').addClass('open');
             $('.fas').removeClass('fa-arrow-up').addClass('fa-arrow-down');
             $(this).find('.fas').removeClass('fa-arrow-down').addClass('fa-arrow-up');
-
         }
+    });
 
+    $(document).ready(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
     });
 });
