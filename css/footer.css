@@ -253,4 +253,10 @@ textarea::placeholder {
     .btn {
         font-size: 14px;
     }
+
+    .footer-grid a {
+        font-size: 14px;
+        height: 40px;
+    }
+
 }

@@ -1,9 +1,15 @@
 function myFunction() {
   var mobile = document.getElementById("mobile_menu");
-  if (mobile.style.display === "block") {
-    mobile.style.display = "none";
+  var icon = document.getElementById("hamburger");
+
+  if (mobile.classList.contains("show")) {
+    mobile.classList.remove("show");
+    icon.classList.remove("fa-times");
+    icon.classList.add("fa-bars");
   } else {
-    mobile.style.display = "block";
+    mobile.classList.add("show");
+    icon.classList.remove("fa-bars");
+    icon.classList.add("fa-times");
   }
 }
 

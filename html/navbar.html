@@ -22,33 +22,34 @@
         <a href="positions.html">Spolupráca</a>
         <a href="contact.html">Kontakt</a>
         <button class="btn" onclick="showPopup()">Objednať <i class="fa fa-arrow-right"></i></button>
-
-        <div class="popup" id="popup">
-            <h3>Sme tu pre Vás</h3>
-            <p>Ako by ste chceli pokračovať?</p>
-            <button class="option-btn" onclick="useEmail()">Email</button>
-            <button class="option-btn" onclick="useWhatsApp()">WhatsApp</button>
-            <button class="option-btn" onclick="makeCall()">Zavolať</button>
-            <button class="close-btn" onclick="closePopup()">Zavrieť</button>
-        </div>
-
-        <div class="overlay" id="overlay" onclick="closePopup()"></div>
-
     </div>
+
+    <div class="popup" id="popup">
+        <h3>Sme tu pre Vás</h3>
+        <p>Ako by ste chceli pokračovať?</p>
+        <button class="option-btn" onclick="useEmail()">Email</button>
+        <button class="option-btn" onclick="useWhatsApp()">WhatsApp</button>
+        <button class="option-btn" onclick="makeCall()">Zavolať</button>
+        <button class="close-btn" onclick="closePopup()">Zavrieť</button>
+    </div>
+    
+    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
+        <i id ="hamburger" class="fa fa-bars"></i>
     </a>
 </div>
 
 <div class="nav-links_mobile" id="mobile_menu">
-    <a href="#home" class="active">Domov</a>
-    <a href="#news">Služby</a>
-    <a href="#contact">O nás</a>
-    <a href="#about">F&Q</a>
-    <a href="#gallery">Galéria</a>
-    <a href="#blog">Blog</a>
-    <a href="#work">Spolupráca</a>
-    <a><button class="btn"> Objednať<i class="fa fa-arrow-right"></i></button></a>
+    <a href="homepage.html" class="active">Domov</a>
+    <a href="services.html">Služby</a>
+    <a href="about.html">O nás</a>
+    <a href="faq.html">F&Q</a>
+    <a href="#">Galéria</a>
+    <a href="blog.html">Blog</a>
+    <a href="positions.html">Spolupráca</a>
+    <a href="contact.html">Kontakt</a>
+    <a><button class="btn" onclick="showPopup()">Objednať <i class="fa fa-arrow-right"></i></button></a>
 </div>
   
 

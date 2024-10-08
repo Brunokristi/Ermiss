@@ -441,8 +441,8 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    body {
-        padding: 35px 30px;
+    .main {
+        padding: 20px;
     }
 
     .first_section {
