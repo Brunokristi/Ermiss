@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+    <title>Galéria</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;300;200&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400&display=swap" >
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+    <script type="text/javascript">window.$crisp = []; window.CRISP_WEBSITE_ID = "b0009e43-9b42-4eb2-9ffe-b85aa11c7e5f"; (function () { d = document; s = d.createElement("script"); s.src = "https://client.crisp.chat/l.js"; s.async = 1; d.getElementsByTagName("head")[0].appendChild(s); })();</script>
+    <script src="../js/gallery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#navbar").load("navbar.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+</head>
+
+
+<body>
+    <div id="navbar"></div>
+    <div class="gallery_container">
+        <div class="gallery_filter">
+            <button class="filter-btn active" data-filter="all">všetky</button>
+            <button class="filter-btn" data-filter="golf">golf</button>
+            <button class="filter-btn" data-filter="proma">promá</button>
+            <button class="filter-btn" data-filter="konferencie">konferencie</button>
+            <button class="filter-btn" data-filter="politicke-akcie">politické akcie</button>
+        </div>
+
+        <div class="gallery">
+            <div class="column" id="column1"></div>
+            <div class="column" id="column2"></div>
+            <div class="column" id="column3"></div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
