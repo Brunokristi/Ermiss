@@ -95,3 +95,18 @@ p {
     font-size: 15px;
     color: #fff;
 }
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .fas {
+        padding: 5px;
+    }
+
+    .faq_answer_container {
+        font-size: 16px;
+    }
+}

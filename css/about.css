@@ -16,27 +16,12 @@ body {
     z-index: 1000;
 }
 
-@media screen and (max-width: 992px) {
-    html {
-        font-size: 20px;
-    }
-
-    body {
-        font-size: 0.9rem;
-        margin: 2% 3% 2% 3%;
-    }
+p {
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
 }
 
-@media screen and (max-width: 576px) {
-    html {
-        font-size: 12px;
-    }
-
-    body {
-        font-size: 0.8rem;
-        margin: 2% 1% 2% 1%;
-    }
-}
 
 .highlight {
     color: #B89080;
@@ -50,23 +35,17 @@ body {
     font-weight: 300;
 }
 
-.about p {
-    font-size: 1rem;
-}
-
-/*table*/
-
 .gradient_border_wrapper {
-    padding: 2px;
+    padding: 1px;
     background: linear-gradient(to right, #FDBCC1, #853D29);
-    border-radius: 30px;
+    border-radius: 15px;
     margin-bottom: 100px;
     margin-top: 100px;
 }
 
 .table_container {
     background-color: #000;
-    border-radius: 30px;
+    border-radius: 15px;
     overflow: hidden;
 }
 
@@ -77,40 +56,6 @@ table {
     table-layout: fixed;
 }
 
-/* Responsive styling for smaller screens */
-@media screen and (max-width: 992px) {
-    .table_container {
-        display: block;
-    }
-
-    table {
-        display: block;
-    }
-
-    tr {
-        display: block;
-    }
-
-    td {
-        display: block;
-        border: none;
-        text-align: left;
-        padding: 10px;
-        border-bottom: 1px solid #B89080;
-        /* Adds a divider between sections */
-    }
-
-    td:last-child {
-        border-bottom: none;
-        /* Remove the bottom border for the last cell */
-    }
-
-    strong {
-        font-size: 1.5rem;
-        /* Adjust font size for smaller screens */
-    }
-}
-
 td {
     padding: 20px;
     border-right: 1px solid #B89080;
@@ -118,6 +63,8 @@ td {
     vertical-align: top;
     text-align: justify;
     position: relative;
+    border-radius: 0px !important;
+    font-size: 16px;
 }
 
 tr:first-child td {
@@ -222,10 +169,6 @@ img {
     font-size: 100px;
 }
 
-.slideshow-about p {
-    font-size: 1rem;
-}
-
 .slideshow-role h4 {
     font-size: 1.5rem;
     font-weight: 300;
@@ -285,4 +228,66 @@ img {
 
 .slideshow-slide.active {
     display: block;
+}
+
+@media screen and (max-width: 992px) {
+    .main {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .highlight {
+        font-size: 40px;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    .gradient_border_wrapper {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .table_container {
+        display: block;
+    }
+
+    table {
+        display: block;
+    }
+
+    tr {
+        display: block;
+    }
+
+    td {
+        display: block;
+        border: none;
+        text-align: left;
+        padding: 20px;
+        border-bottom: 1px solid #B89080 !important;
+        text-align: justify;
+        font-size: 16px;
+        border-radius: 0px;
+    }
+
+    td:last-child {
+        border-bottom: none !important;
+    }
+
+    strong {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-height: 400px;
+    }
+
+    .slideshow-name span {
+        font-size: 70px;
+    }
 }
