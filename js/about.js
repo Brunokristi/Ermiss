@@ -18,5 +18,12 @@ document.addEventListener('DOMContentLoaded', function () {
         showSlide(currentSlide);
     });
 
+    function automaticShow() {
+        currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+        showSlide(currentSlide);
+    }
+
     showSlide(currentSlide);
+    setInterval(automaticShow, 5000)
+
 });

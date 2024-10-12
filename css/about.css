@@ -57,7 +57,7 @@ table {
 }
 
 td {
-    padding: 20px;
+    padding: 30px;
     border-right: 1px solid #B89080;
     border-left: 1px solid #B89080;
     vertical-align: top;
@@ -65,10 +65,24 @@ td {
     position: relative;
     border-radius: 0px !important;
     font-size: 16px;
+    justify-content: center;
+    align-items: center;
+}
+
+td:hover {
+    padding: 30px 15px;
+    font-size: 17px;
+    transition: 0.5s ease;
+}
+
+td:hover strong {
+    font-size: 35px;
+    transition: 0.5s ease;
 }
 
 tr:first-child td {
     border-top: none;
+    height: 210px;
 }
 
 tr:last-child td {

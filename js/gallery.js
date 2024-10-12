@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const column1 = document.getElementById('column1');
     const column2 = document.getElementById('column2');
     const column3 = document.getElementById('column3');
@@ -21,11 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 'proma/IMG_1401.JPG',
                 'proma/IMG_1498.jpg',
                 'proma/IMG_2513.JPG',
+                'proma/IMG_9320.jpg',
                 'proma/IMG_3597.JPG',
                 'proma/IMG_3598.JPG',
                 'proma/IMG_3610.JPG',
                 'proma/IMG_7961.jpg',
                 'proma/IMG_9944.jpg'
+
             ],
 
         'konferencie':

@@ -44,8 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showNextSlide();
     });
 
-    // Optional: Automatic slide change every 5 seconds
-    //setInterval(showNextSlide, 5000);  // 5 seconds
+    setInterval(showNextSlide, 3000)
 
     const all_images = [
         "hostess_1.jpg",
@@ -107,7 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    setInterval(changeImage, 2000);
+    setInterval(changeImage, 4000);
+
 
     $(document).ready(function () {
         $("#navbar").load("navbar.html");
