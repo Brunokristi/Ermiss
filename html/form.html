@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+    <html lang="sk">
+        
+    <head>
+        <title>Domovská stránka</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" type="text/css" href="../css/form.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;300;200&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;200;300;400&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="../js/form.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init({
+                    publicKey: "XHlrtkiDXY45RQNAe",
+                });
+            })();
+        </script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    </head>
+    
+    <body>
+        <div id="navbar"></div>
+        <div class="main">
+            <form onsubmit="sendMail(event)">
+                <div class="form-group">
+                    <label for="name">Meno a Priezvisko</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                    
+                <div class="form-group">
+                    <label for="date">Dátum narodenia</label>
+                    <input type="date" id="date" name="birthdate" required>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="file-upload">Odkaz na sociálnu sieť, kde sa reprezentuješ</label>
+                    <input type="text" id="social" name="social" required>
+                </div>
+
+    
+                <div class="form-group">
+                    <label>O akú pozíciu máš záujem?</label>
+                    <div class="radio-group">
+                        <label class="custom-radio">
+                            <input type="radio" name="position" value="Hostes/ka a promotér/ka" checked>
+                            <span class="radio-circle"></span>
+                            Hostes/ka a promotér/ka
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="position" value="Hostes/ka">
+                            <span class="radio-circle"></span>
+                            Hostes/ka
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="position" value="Promotér/ka">
+                            <span class="radio-circle"></span>
+                            Promotér/ka
+                        </label>
+                    </div>
+                </div>
+
+
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                
+                <div class="form-group">
+                    <label for="phone">Telefón</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="area">Okres</label>
+                    <select id="area" name="area" required>
+                        <option value="Bratislava">Bratislava</option>
+                        <option value="Nitra">Nitra</option>
+                        <option value="Banská Bystrica">Banská Bystrica</option>
+                        <option value="Zvolen">Zvolen</option>
+                        <option value="Košice">Košice</option>
+                        <option value="Poprad">Poprad</option>
+                        <option value="Žiar nad Hronom">Žiar nad Hronom</option>
+                        <option value="Lučenec">Lučenec</option>
+                    </select>
+                </div>
+    
+    
+                <div class="form-group">
+                    <label>Ako si sa o nás dozvedel/a?</label>
+                    <div class="radio-group">
+                        <label class="custom-radio">
+                            <input type="radio" name="link" value="Instagram" checked>
+                            <span class="radio-circle"></span>
+                            Instagram
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="link" value="LinkedIn">
+                            <span class="radio-circle"></span>
+                            LinkedIn
+                        </label>
+                        <label class="custom-radio">
+                            <input type="radio" name="link" value="Web">
+                            <span class="radio-circle"></span>
+                            Web
+                        </label>
+                    </div>
+                </div>
+    
+                <button class="btn" type="submit">Odoslať <i class="fa fa-arrow-right"></i></button>
+            </form>
+        </div>
+        
+    <div id="footer"></div>
+</body>
+
+</html>

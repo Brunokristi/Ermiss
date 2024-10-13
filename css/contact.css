@@ -50,9 +50,13 @@ input {
     padding: 10px;
     border-radius: 15px;
     border: none;
-    padding-left: 80px;
+    padding-left: 100px !important;
     width: 100%;
     box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
 }
 
 textarea {
@@ -76,15 +80,13 @@ textarea::placeholder {
 .special {
     position: absolute;
     top: 50%;
-    left: 10px;
     transform: translateY(-50%);
-    padding: 5px;
+    padding: 5px !important;
     background-color: white;
     color: #B89080;
     transition: 0.2s ease all;
     pointer-events: none;
     border-right: solid 1px #000;
-    width: 50px;
 }
 
 .btn {

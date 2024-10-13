@@ -143,6 +143,7 @@ img {
     max-height: 550px;
     object-fit: cover;
     border-radius: 15px;
+    object-position: top;
 }
 
 .person-overlay {
@@ -155,15 +156,11 @@ img {
 
 .person-image {
     width: 190%;
-    /* Adjust size of PNG overlay */
     height: auto;
     overflow: visible;
-    /* Allow the image to overflow the container */
     z-index: 10;
-    /* Ensure the person image appears on top */
     position: relative;
     object-fit: contain;
-    /* This makes sure the entire image is visible */
 }
 
 .slideshow-name {
@@ -254,7 +251,7 @@ img {
     }
 
     .highlight {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     h1 {
@@ -287,6 +284,7 @@ img {
         text-align: justify;
         font-size: 16px;
         border-radius: 0px;
+        height: max-content !important;
     }
 
     td:last-child {
@@ -302,6 +300,6 @@ img {
     }
 
     .slideshow-name span {
-        font-size: 70px;
+        font-size: 60px;
     }
 }

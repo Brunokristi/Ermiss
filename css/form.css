@@ -1,0 +1,126 @@
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+}
+
+.main {
+    padding: 50px;
+}
+
+#navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+input {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px !important;
+    margin: 25px 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.form-group {
+    background: linear-gradient(#000, #000) padding-box, linear-gradient(to right, #FDBCC1, #853D29) border-box;
+    border-bottom: 1px solid transparent;
+    margin: 25px 0px;
+}
+
+select {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    margin: 25px 0;
+    width: 100%;
+    border-radius: 15px;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+input[type="date"] {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.custom-radio {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-radio:first-child {
+    margin-top: 25px;
+}
+
+.custom-radio:last-child {
+    margin-bottom: 25px;
+}
+
+.custom-radio input[type="radio"] {
+    display: none;
+}
+
+.radio-circle {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #B89080;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.radio-circle::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #B89080;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s;
+}
+
+.custom-radio input[type="radio"]:checked+.radio-circle::after {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.custom-radio:hover .radio-circle {
+    background-color: rgba(0, 123, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+}
