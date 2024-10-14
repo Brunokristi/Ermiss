@@ -42,17 +42,31 @@ body {
 }
 
 .input-container {
-    position: relative;
     margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 input {
-    padding: 10px;
-    border-radius: 15px;
     border: none;
-    padding-left: 100px !important;
-    width: 100%;
-    box-sizing: border-box;
+    width: 80%;
+    height: 20px;
+}
+
+label {
+    width: 30%;
+    border-right: 1px solid #B89080;
+    color: #000;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
 }
 
 input:focus {
@@ -68,25 +82,12 @@ textarea {
     box-sizing: border-box;
     margin-bottom: 10px;
     margin-top: 10px;
-    ;
 }
 
 textarea::placeholder {
     color: #B89080;
     font-size: 14px;
     font-weight: 300;
-}
-
-.special {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 5px !important;
-    background-color: white;
-    color: #B89080;
-    transition: 0.2s ease all;
-    pointer-events: none;
-    border-right: solid 1px #000;
 }
 
 .btn {
