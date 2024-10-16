@@ -16,12 +16,31 @@ body {
     z-index: 1000;
 }
 
+h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.highlight {
+    color: #B89080;
+    font-family: 'Ephesis', cursive;
+    font-size: 50px;
+    font-weight: 300;
+    position: relative;
+}
+
 input {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 300;
     padding: 10px !important;
     margin: 25px 0;
+    width: 100%;
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: none;
 }
 
 input:focus {
@@ -33,6 +52,10 @@ label {
     font-weight: 300;
     color: #fff;
     padding: 10px 0;
+}
+
+form {
+    margin-top: 100px;
 }
 
 .form-group {
@@ -117,6 +140,48 @@ input[type="date"] {
 
 .custom-radio:hover .radio-circle {
     background-color: rgba(0, 123, 255, 0.1);
+}
+
+.swal-text {
+    font-family: 'Alegreya Sans', sans-serif !important;
+    font-size: 20px !important;
+    font-weight: 300 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+}
+
+.swal-modal {
+    background-color: #000 !important;
+    border: none !important;
+    border-radius: 15px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 15px !important;
+    font-weight: 300 !important;
+    color: #fff !important;
+    text-decoration: none !important;
+
+}
+
+/* Change the button color */
+.swal-button {
+    background-color: #B89080 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 15px !important;
+    font-family: 'Inter', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.swal-button:hover {
+    background-color: #F2F0E4 !important;
+    color: #000 !important;
+}
+
+.swal-button:focus {
+    outline: none !important;
 }
 
 @media (max-width: 768px) {

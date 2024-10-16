@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         showNextSlide();
     });
 
-    setInterval(showNextSlide, 3000)
+    setInterval(showNextSlide, 7000)
 
     const all_images = [
         "hostess_1.jpg",
@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    setInterval(changeImage, 4000);
+    setInterval(changeImage, 5000);
 
 
     $(document).ready(function () {
