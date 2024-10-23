@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 'proma/IMG_9320.jpg',
                 'proma/IMG_3597.JPG',
                 'proma/IMG_3598.JPG',
-                'proma/IMG_3610.JPG',
+                'proma/IMG_3610.jpg',
                 'proma/IMG_7961.jpg',
                 'proma/IMG_9944.jpg'
 

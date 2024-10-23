@@ -142,7 +142,7 @@ p {
 }
 
 .border p {
-    height: 60px;
+    height: 70px;
     overflow: hidden;
 }
 
@@ -449,6 +449,21 @@ h2 {
     .first_section {
         flex-direction: column;
         text-align: center;
+    }
+
+    .element img:hover {
+        box-sizing: border-box;
+        height: 232px;
+        width: 150px;
+    }
+
+    .element:hover {
+        width: 200px;
+        overflow-y: scroll;
+    }
+
+    .border:hover p {
+        height: auto;
     }
 
     .about {

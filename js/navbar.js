@@ -24,12 +24,12 @@ function closePopup() {
 }
 
 function useEmail() {
-  window.location.href = "contact.html"; // Change this to the desired email
+  window.location.href = "contact.html";
   closePopup(); // Close the popup
 }
 
 function useWhatsApp() {
-  window.location.href = "https://wa.me/1234567890"; // Change this to your WhatsApp number
+  window.location.href = "https://wa.me/message/6SRLOWZO5K2YO1"; 
   closePopup(); // Close the popup
 }
 

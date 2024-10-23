@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     $(document).ready(function () {
-        $("#navbar").load("navbar.html");
-        $("#footer").load("footer.html");
+        $("#navbar").load("html/navbar.html");
+        $("#footer").load("html/footer.html");
     });
 });

@@ -73,7 +73,7 @@ a {
         width: 100%;
     }
 
-    img {
+    .blog_image {
         width: 100% !important;
         margin: 20px 0px !important;
     }

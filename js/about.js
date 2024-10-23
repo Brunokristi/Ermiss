@@ -25,5 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     showSlide(currentSlide);
     setInterval(automaticShow, 15000)
+    
+    $(document).ready(function () {
+        $("#navbar").load("navbar.html");
+        $("#footer").load("footer.html");
+    });
 
 });
